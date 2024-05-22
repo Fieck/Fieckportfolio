@@ -1,0 +1,69 @@
+/* frontend/src/components/Header.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hoverEffect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.header {
+    background-color: #ffffff; /* Match the color of the homepage */
+    color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid #333;
+    animation: fadeIn 1s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header nav ul li a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+    animation: hoverEffect 0.3s forwards;
+}
