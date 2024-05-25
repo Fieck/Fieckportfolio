@@ -4,9 +4,9 @@ import Footer from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faReact, faLaravel, faHtml5, faCss3Alt, faPhp, faGithub, faFigma } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Home.css';
-import project1 from "../images/project1.png";
-import project2 from "../images/project2.png";
-import project3 from "../images/project3.png";
+import project1 from "../images/comingsoon.jpeg";
+import project2 from "../images/comingsoon.jpeg";
+import project3 from "../images/comingsoon.jpeg";
 
 
 const Home = () => {
@@ -14,7 +14,6 @@ const Home = () => {
         <div className="home">
             <Header />
             <HeroSection />
-            <Introduction />
             <Skills />
             <ProjectsShowcase />
             <Footer />
@@ -26,18 +25,12 @@ const HeroSection = () => (
     <section className="hero">
         <div className="hero-content">
             <h1>Welcome to My Portfolio</h1>
-            <p>I'm a Full Stack Developer specializing in building exceptional digital experiences.</p>
+            <p>Tech-savvy Web | Full Stack Developer eager to fuel your company's growth with innovative solutions. Let's team up to elevate your business to new heights.</p>
             <button className="hero-button">Explore My Work</button>
         </div>
     </section>
 );
 
-const Introduction = () => (
-    <section className="introduction">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a software engineer with a passion for developing innovative programs. I've got a knack for problem-solving and thrive in environments that challenge me.</p>
-    </section>
-);
 
 const Skills = () => (
     <section className="skills">
