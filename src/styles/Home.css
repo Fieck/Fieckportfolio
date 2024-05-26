@@ -210,31 +210,6 @@
 /* frontend/src/styles/Home.css */
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-
-    .hero-content p {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 600px) {
-    .skills-list {
-        animation-duration: 30s; /* Slower animation on mobile */
-    }
-
-    .project {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .project-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 /* Media Query for iPhone 12 */
 @media (max-width: 390px) {
@@ -254,4 +229,18 @@
     .skills-list li {
         font-size: 1.5em;
     }
+    .skills-marquee{
+        width: 150%;
+    }
+    .introduction h2,
+    .skills h2,
+    .projects h2 {
+        font-family: 'Lucida Console', Courier, monospace;
+    }
+    .hero-content h1 {
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        font-family: 'Lucida Console', Courier, monospace;
+    }
+    
+
 }
