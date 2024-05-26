@@ -91,13 +91,14 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 120%;
+    width: 150%;
     background-size: 50%;
 }
 
 .skills-list {
     display: flex;
     animation: marquee 20s linear infinite; /* Animation */
+    
 }
 
 .skills-list li {
@@ -129,7 +130,7 @@
 }
 
 .skills-list li:nth-child(4) svg {
-    color: black; /* Node.js alternative (darker green) */
+    color: purple; /* Node.js alternative (darker green) */
 }
 
 .skills-list li:nth-child(5) svg {
@@ -203,3 +204,85 @@
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
+/* frontend/src/styles/Home.css */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .skills-marquee {
+        width: 100%;
+    }
+
+    .skills-list li {
+        font-size: 1.5em;
+    }
+
+    .project {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+    }
+
+    .hero-button {
+        font-size: 0.8em;
+        padding: 8px 15px;
+    }
+
+    .project {
+        width: calc(100% - 20px); /* Single card per row */
+        padding: 10px;
+    }
+}
+
+/* frontend/src/styles/Home.css */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 40px); /* Three cards per row */
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    }
+    .skills-list {
+        width: calc(300%); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 calc(100% - 20px); /* Single card per row */
+    }
+}
+
