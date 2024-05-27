@@ -1,7 +1,7 @@
 /* frontend/src/components/Footer.css */
 
 .footer {
-    opacity: 0; /* Initially hide the footer */
+   
     background-color: #ffffff; /* White background */
     color: #333333; /* Dark gray text for contrast */
     padding: 20px 30px;
