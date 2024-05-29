@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
 
 .about {
     padding: 0px 0px;
@@ -70,12 +71,15 @@
   .timeline-content h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   }
   
   .timeline-content p {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0;
+    font-family: "Garamond";
   }
+  
   
   /* Responsive Styles */
   @media (max-width: 768px) {

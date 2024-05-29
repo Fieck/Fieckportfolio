@@ -1,0 +1,36 @@
+/* src/pages/Contact.css */
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #95bfe4, #4d7fc2, #87b1df, #b2d2eb, #77a7d8, #6c9cd3,#a4c4e8,#E4EAF1,#6497d4,#6294cc);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+.contact-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-page main {
+        padding: 10px;
+    }
+}
